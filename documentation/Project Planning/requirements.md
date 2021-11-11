@@ -1,0 +1,43 @@
+# Requirements
+
+- Enter receipt data
+- - item specific
+- - - id (numeric)
+- - - category (ex. Food and Drink, Leisure)
+- - - subcategory (ex. Coffee, Book, Video Game)
+- - - name (ex. "The Adventures of these three People" by An Author)
+- - - description (ex. white embroidery floss)
+- - - size (if applicable) (ex. small, 2 meters, size 4)
+- - - notes
+- - - brand (ex. Starbucks, Loops & Threads, Nestle)
+- - - price (base price, no taxes, modifiers)
+- - - amount (1 - ?)
+- - - tax type (GST, PST, Both, Neither) (does not account for foreign tax types, uses modifier instead)
+- - - price modifiers (% and #)
+- - - - description
+- - - - before or after tax
+- - - - can be none or multiple of each type
+- - - purchase importance (10 point, unnecessary, neutral, necessary, required)
+- - purchase specific
+- - - date
+- - - purchase location (ex. store name)
+- - - store type? (ex. online, physical) (necessary) (store detail? online, address at x street, Canadian/US version of store)
+- - - combined price
+- frequently used items are remembered (autofill) (ex. store names, brands)
+- freqently similar items are remembered (autofill) (ex. price of common object)
+- - if object has specific price 70% of time autofill? (video games often cost $80)
+- - price estimation (based on common item price?)
+- receipts are saved
+- some data is kept on hand for use with receipts (ex. GST is 5%, PST is 7%)
+- - this data can be changed without modifying the receipts (date specifice? applies to all items before x day?)
+- - store commonly used items and expected prices? (manually add to autofill data)
+- Provide analytics
+- - weekly, monthly, yearly
+- - display graph
+- - uses purchase categories, amounts, importance
+- previous items can be modified
+- data backed up to remote
+- - how to backup data?
+- - - should be mostly automatic (i.e. no messing with file structures, copy/paste)
+- - - save when plugged in? send remotely to server?
+- - - requires research
