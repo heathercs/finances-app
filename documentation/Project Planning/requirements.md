@@ -2,7 +2,7 @@
 
 - Enter receipt data
 - - item specific
-- - - id (numeric)
+- - - id (numeric) (hidden?)
 - - - category (ex. Food and Drink, Leisure)
 - - - subcategory (ex. Coffee, Book, Video Game)
 - - - name (ex. "The Adventures of these three People" by An Author)
@@ -22,7 +22,7 @@
 - - - date
 - - - purchase location (ex. store name)
 - - - store type? (ex. online, physical) (necessary) (store detail? online, address at x street, Canadian/US version of store)
-- - - combined price
+- - - combined price (necessary to store? can be calculated based on previous info, what if some info missing?)
 - frequently used items are remembered (autofill) (ex. store names, brands)
 - freqently similar items are remembered (autofill) (ex. price of common object)
 - - if object has specific price 70% of time autofill? (video games often cost $80)
@@ -41,3 +41,8 @@
 - - - should be mostly automatic (i.e. no messing with file structures, copy/paste)
 - - - save when plugged in? send remotely to server?
 - - - requires research
+- Save history of card balances linked to purchases?
+- - save states when remaining card balance changes?
+- Save history of stores linkied to purchases?
+- - Save previous locations if store moves/changes name?
+- If history save, must have way to change historical values (ex. fix typos)
