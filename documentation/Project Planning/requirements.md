@@ -1,5 +1,51 @@
 # Requirements
 
+- Android App for Providing Analytics regarding spending habits
+- App will have modular design, may be expanded to provide other functionality in the future
+
+## Basic Layouts/Pages
+### Requires editting when visual plan completed
+
+- App divided into sections (visual plan not complete)
+- - Home Screen
+- - - Has button to navigate to Finance Visualization Screen
+- - - Has space for buttons to navigate to future Modules
+- - - Button to back up data (if connected to a computer)
+- - Finance Visualization Screen
+- - - Split into two sections
+- - - - Graph Visualization
+- - - - - Displays graph showing financial data
+- - - - - Options available to manipulate the graph (data over a time interval, include only certain data)
+- - - - - Graph updates in real time
+- - - - List of Receipts
+- - - - - Card view of all receipts entered
+- - - - - Options available to manipulate receipts shown (data over a time interval, include only certain data)
+- - Receipt Screen
+- - - Accessed when selecting a Receipt Card or creating a new receipt
+- - - Shows detailed information of what is shown in the receipt
+- - - When accessed from Receipt Card, option available to edit or delete Receipt
+- - - - Deleteing a receipt requires confirmation, will delete permananetly
+- - - When accessed from creating a new Receipt, option available to accept/reject/edit receipt
+- - - - If new Receipt actually editted receipt, rejecting reverts receipt to original form
+- - - - If actually new Receipt, rejecting deletes receipt
+- - - - If edit receipt option selected, goes back to Add Receipt Screen, pre-fills values
+- - Add Receipt Screen
+- - - Has Fields for filling in Receipt data
+- - - Receipt can be finished or discarded
+- - - - finishing a receipt navs to Receipt Screen which shows a preview
+- - - Variation of Add Receipt screen is Edit Receipt Screen
+- - - - fields pre-filled with information
+- - Accounts List Screen
+- - - Displays different cards and expected balances as Account Cards
+- - - Selecting an Account Card navigates to the cards screen
+- - Account Screen
+- - - Similar to Finance Visualization Screen, split into Graph and List of Receipts for Card, same navigation options
+- - - Option to edit card, change name
+- - - Option to add balance, if balance added displayed with receipts
+- - Settings Screen
+- - - Options to edit saved fields
+- - - Options to edit default visualizations
+
 - Enter receipt data
 - - item specific
 - - - id (numeric) (hidden?)
@@ -24,7 +70,7 @@
 - - - store type? (ex. online, physical) (necessary) (store detail? online, address at x street, Canadian/US version of store)
 - - - combined price (necessary to store? can be calculated based on previous info, what if some info missing?)
 - frequently used items are remembered (autofill) (ex. store names, brands)
-- freqently similar items are remembered (autofill) (ex. price of common object)
+- frequently similar items are remembered (autofill) (ex. price of common object)
 - - if object has specific price 70% of time autofill? (video games often cost $80)
 - - price estimation (based on common item price?)
 - receipts are saved
@@ -43,6 +89,6 @@
 - - - requires research
 - Save history of card balances linked to purchases?
 - - save states when remaining card balance changes?
-- Save history of stores linkied to purchases?
+- Save history of stores linked to purchases?
 - - Save previous locations if store moves/changes name?
 - If history save, must have way to change historical values (ex. fix typos)
