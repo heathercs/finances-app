@@ -83,12 +83,18 @@
 - - uses purchase categories, amounts, importance
 - previous items can be modified
 - data backed up to remote
-- - how to backup data?
-- - - should be mostly automatic (i.e. no messing with file structures, copy/paste)
-- - - save when plugged in? send remotely to server?
-- - - requires research
-- Save history of card balances linked to purchases?
-- - save states when remaining card balance changes?
-- Save history of stores linked to purchases?
-- - Save previous locations if store moves/changes name?
-- If history save, must have way to change historical values (ex. fix typos)
+- - two methods to backup data
+- - - manual
+- - - - sent using standard android share options (bluetooth, email, app, etc.)
+- - - - triggered manually only
+- - - server
+- - - - sent to server
+- - - - csv displayed on website, user specific
+- - - - may be done manually or automatically, time interval specified in settings
+- - - - server and website will be created for practice purposes only, not expected to be hosted but should maintain quality
+- - data converted to csv before being sent (TODO: scheme)
+- - backup combines old and new data
+- - backup may be restored on phone, combines old and new data (data storage limits?)
+- - website 
+- - - display data as csv, does not show data visualization or complex app options
+- - - - may be expanded to display these options (low priority)
