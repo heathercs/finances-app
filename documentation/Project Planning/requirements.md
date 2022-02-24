@@ -7,94 +7,94 @@
 ### Requires editting when visual plan completed
 
 - App divided into sections (visual plan not complete)
-- - Home Screen
-- - - Has button to navigate to Finance Visualization Screen
-- - - Has space for buttons to navigate to future Modules
-- - - Button to back up data (if connected to a computer)
-- - Finance Visualization Screen
-- - - Split into two sections
-- - - - Graph Visualization
-- - - - - Displays graph showing financial data
-- - - - - Options available to manipulate the graph (data over a time interval, include only certain data)
-- - - - - Graph updates in real time
-- - - - List of Receipts
-- - - - - Card view of all receipts entered
-- - - - - Options available to manipulate receipts shown (data over a time interval, include only certain data)
-- - Receipt Screen
-- - - Accessed when selecting a Receipt Card or creating a new receipt
-- - - Shows detailed information of what is shown in the receipt
-- - - When accessed from Receipt Card, option available to edit or delete Receipt
-- - - - Deleteing a receipt requires confirmation, will delete permananetly
-- - - When accessed from creating a new Receipt, option available to accept/reject/edit receipt
-- - - - If new Receipt actually editted receipt, rejecting reverts receipt to original form
-- - - - If actually new Receipt, rejecting deletes receipt
-- - - - If edit receipt option selected, goes back to Add Receipt Screen, pre-fills values
-- - Add Receipt Screen
-- - - Has Fields for filling in Receipt data
-- - - Receipt can be finished or discarded
-- - - - finishing a receipt navs to Receipt Screen which shows a preview
-- - - Variation of Add Receipt screen is Edit Receipt Screen
-- - - - fields pre-filled with information
-- - Accounts List Screen
-- - - Displays different cards and expected balances as Account Cards
-- - - Selecting an Account Card navigates to the cards screen
-- - Account Screen
-- - - Similar to Finance Visualization Screen, split into Graph and List of Receipts for Card, same navigation options
-- - - Option to edit card, change name
-- - - Option to add balance, if balance added displayed with receipts
-- - Settings Screen
-- - - Options to edit saved fields
-- - - Options to edit default visualizations
+    - Home Screen
+        - Has button to navigate to Finance Visualization Screen
+        - Has space for buttons to navigate to future Modules
+        - Button to back up data (if connected to a computer)
+    - Finance Visualization Screen
+        - Split into two sections
+            - Graph Visualization
+                - Displays graph showing financial data
+                - Options available to manipulate the graph (data over a time interval, include only certain data)
+                - Graph updates in real time
+            - List of Receipts
+                - Card view of all receipts entered
+                - Options available to manipulate receipts shown (data over a time interval, include only certain data)
+    - Receipt Screen
+        - Accessed when selecting a Receipt Card or creating a new receipt
+        - Shows detailed information of what is shown in the receipt
+        - When accessed from Receipt Card, option available to edit or delete Receipt
+            - Deleteing a receipt requires confirmation, will delete permananetly
+        - When accessed from creating a new Receipt, option available to accept/reject/edit receipt
+            - If new Receipt actually editted receipt, rejecting reverts receipt to original form
+            - If actually new Receipt, rejecting deletes receipt
+            - If edit receipt option selected, goes back to Add Receipt Screen, pre-fills values
+    - Add Receipt Screen
+        - Has Fields for filling in Receipt data
+        - Receipt can be finished or discarded
+            - finishing a receipt navs to Receipt Screen which shows a preview
+        - Variation of Add Receipt screen is Edit Receipt Screen
+            - fields pre-filled with information
+    - Accounts List Screen
+        - Displays different cards and expected balances as Account Cards
+        - Selecting an Account Card navigates to the cards screen
+    - Account Screen
+        - Similar to Finance Visualization Screen, split into Graph and List of Receipts for Card, same navigation options
+        - Option to edit card, change name
+        - Option to add balance, if balance added displayed with receipts
+    - Settings Screen
+        - Options to edit saved fields
+        - Options to edit default visualizations
 
 - Enter receipt data
-- - item specific
-- - - id (numeric) (hidden?)
-- - - category (ex. Food and Drink, Leisure)
-- - - subcategory (ex. Coffee, Book, Video Game)
-- - - name (ex. "The Adventures of these three People" by An Author)
-- - - description (ex. white embroidery floss)
-- - - size (if applicable) (ex. small, 2 meters, size 4)
-- - - notes
-- - - brand (ex. Starbucks, Loops & Threads, Nestle)
-- - - price (base price, no taxes, modifiers)
-- - - amount (1 - ?)
-- - - tax type (GST, PST, Both, Neither) (does not account for foreign tax types, uses modifier instead)
-- - - price modifiers (% and #)
-- - - - description
-- - - - before or after tax
-- - - - can be none or multiple of each type
-- - - purchase importance (10 point, unnecessary, neutral, necessary, required)
-- - purchase specific
-- - - date
-- - - purchase location (ex. store name)
-- - - store type? (ex. online, physical) (necessary) (store detail? online, address at x street, Canadian/US version of store)
-- - - combined price (necessary to store? can be calculated based on previous info, what if some info missing?)
+    - item specific
+        - id (numeric) (hidden?)
+        - category (ex. Food and Drink, Leisure)
+        - subcategory (ex. Coffee, Book, Video Game)
+        - name (ex. "The Adventures of these three People" by An Author)
+        - description (ex. white embroidery floss)
+        - size (if applicable) (ex. small, 2 meters, size 4)
+        - notes
+        - brand (ex. Starbucks, Loops & Threads, Nestle)
+        - price (base price, no taxes, modifiers)
+        - amount (1 - ?)
+        - tax type (GST, PST, Both, Neither) (does not account for foreign tax types, uses modifier instead)
+        - price modifiers (% and #)
+            - description
+            - before or after tax
+            - can be none or multiple of each type
+        - purchase importance (10 point, unnecessary, neutral, necessary, required)
+    - purchase specific
+        - date
+        - purchase location (ex. store name)
+        - store type? (ex. online, physical) (necessary) (store detail? online, address at x street, Canadian/US version of store)
+        - combined price (necessary to store? can be calculated based on previous info, what if some info missing?)
 - frequently used items are remembered (autofill) (ex. store names, brands)
 - frequently similar items are remembered (autofill) (ex. price of common object)
-- - if object has specific price 70% of time autofill? (video games often cost $80)
-- - price estimation (based on common item price?)
+    - if object has specific price 70% of time autofill? (video games often cost $80)
+    - price estimation (based on common item price?)
 - receipts are saved
 - some data is kept on hand for use with receipts (ex. GST is 5%, PST is 7%)
-- - this data can be changed without modifying the receipts (date specifice? applies to all items before x day?)
-- - store commonly used items and expected prices? (manually add to autofill data)
+    - this data can be changed without modifying the receipts (date specifice? applies to all items before x day?)
+    - store commonly used items and expected prices? (manually add to autofill data)
 - Provide analytics
-- - weekly, monthly, yearly
-- - display graph
-- - uses purchase categories, amounts, importance
+    - weekly, monthly, yearly
+    - display graph
+    - uses purchase categories, amounts, importance
 - previous items can be modified
 - data backed up to remote
-- - two methods to backup data
-- - - manual
-- - - - sent using standard android share options (bluetooth, email, app, etc.)
-- - - - triggered manually only
-- - - server
-- - - - sent to server
-- - - - csv displayed on website, user specific
-- - - - may be done manually or automatically, time interval specified in settings
-- - - - server and website will be created for practice purposes only, not expected to be hosted but should maintain quality
-- - data converted to csv before being sent (TODO: scheme)
-- - backup combines old and new data
-- - backup may be restored on phone, combines old and new data (data storage limits?)
-- - website 
-- - - display data as csv, does not show data visualization or complex app options
-- - - - may be expanded to display these options (low priority)
+    - two methods to backup data
+        - manual
+            - sent using standard android share options (bluetooth, email, app, etc.)
+            - triggered manually only
+        - server
+            - sent to server
+            - csv displayed on website, user specific
+            - may be done manually or automatically, time interval specified in settings
+            - server and website will be created for practice purposes only, not expected to be hosted but should maintain quality
+    - data converted to csv before being sent (TODO: scheme)
+    - backup combines old and new data
+    - backup may be restored on phone, combines old and new data (data storage limits?)
+    - website 
+        - display data as csv, does not show data visualization or complex app options
+            - may be expanded to display these options (low priority)
