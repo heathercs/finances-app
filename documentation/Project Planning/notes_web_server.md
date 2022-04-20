@@ -71,9 +71,28 @@
     * MongoDB
     * Redis
 
+* REST API
+    * Representational State Transfer
+    * web service architectural style
+        * client software accesses
+        * server uses API to provide access
+        * resource from server to client
+
+* MVC (Model View Controller) pattern
+    * Model
+        * backend, data logic
+    * View
+        * frontend, GUI
+    * Controller
+        * controls how data displayed
+    
+
+
 ## References
 
 * Web server Basics
     * https://www.tutorialspoint.com/internet_technologies/web_servers.htm
 * .Net
     * https://www.geeksforgeeks.org/introduction-to-net-framework/ 
+* REST API
+    * https://www.altexsoft.com/blog/rest-api-design/
